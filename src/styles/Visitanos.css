@@ -1,0 +1,123 @@
+.visitanos-section {
+  padding: 80px 40px;
+  background-color: var(--color-bg-white);
+  width: 100%;
+}
+
+.visitanos-grid-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.visitanos-info-block {
+  background: #f5f8f6;
+  border: 1px solid var(--color-border-gray);
+  border-radius: 22px;
+  padding: 48px;
+  box-shadow: 0 12px 35px rgba(30, 57, 50, 0.08);
+}
+
+.visitanos-info-block {
+  width: 100%;
+}
+
+.visitanos-subtitle {
+  font-size: 12px;
+  color: var(--color-brand-accent);
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.visitanos-info-block h2 {
+  font-size: 36px;
+  color: var(--color-brand-dark);
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+
+.decor-line-left {
+  width: 60px;
+  height: 4px;
+  background-color: var(--color-brand-accent);
+  margin-bottom: 25px;
+  border-radius: 2px;
+}
+
+.visitanos-desc {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  transition: var(--transition-fast);
+}
+
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(30, 57, 50, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-brand-dark);
+  font-size: 18px;
+  flex-shrink: 0;
+  transition: var(--transition-normal);
+}
+
+.contact-item:hover .contact-icon {
+  background-color: var(--color-brand-dark);
+  color: var(--color-bg-white);
+  transform: scale(1.08);
+  box-shadow: 0 4px 8px rgba(30, 57, 50, 0.2);
+}
+
+.contact-text h4 {
+  font-size: 16px;
+  color: var(--color-brand-dark);
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.contact-text p {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.45;
+}
+
+
+
+/* Responsividad para móviles y tablets */
+@media (max-width: 992px) {
+  .visitanos-grid-container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .visitanos-section {
+    padding: 60px 24px;
+  }
+  
+  .visitanos-info-block h2 {
+    font-size: 28px;
+  }
+  
+
+}

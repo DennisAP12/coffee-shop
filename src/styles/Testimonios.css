@@ -1,0 +1,140 @@
+.testimonios-section {
+  padding: 80px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.testimonios-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.testimonios-subtitle {
+  font-size: 12px;
+  color: var(--color-brand-accent);
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.testimonios-header h2 {
+  font-size: 42px;
+  color: var(--color-brand-dark);
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+
+.testimonios-header p {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* CSS Grid Autofit */
+.testimonios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.testimonio-card {
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-border-gray);
+  border-radius: 16px;
+  padding: 40px 30px;
+  position: relative;
+  box-shadow: 0 4px 15px var(--color-shadow-light);
+  transition: var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  border-color: var(--color-brand-light-hover);
+}
+
+.quote-icon {
+  color: rgba(30, 57, 50, 0.07);
+  font-size: 44px;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  line-height: 1;
+}
+
+.star-rating {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 4px;
+}
+
+.star-filled {
+  color: #ffb800; /* Color dorado Starbucks */
+  font-size: 15px;
+}
+
+.testimonio-text {
+  font-size: 15px;
+  color: var(--color-text-muted);
+  font-style: italic;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.testimonio-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid var(--color-border-gray);
+  padding-top: 20px;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  font-size: 15px;
+  color: var(--color-brand-dark);
+  font-weight: 700;
+  margin: 0;
+}
+
+.author-date {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .testimonios-section {
+    padding: 72px 32px;
+  }
+
+  .testimonios-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .testimonio-card:last-child {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 12px);
+    width: 100%;
+    justify-self: center;
+  }
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .testimonios-section {
+    padding: 60px 24px;
+  }
+}

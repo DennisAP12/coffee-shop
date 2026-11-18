@@ -1,0 +1,24 @@
+.sales-table-section {
+  padding: 0;
+}
+
+.sales-table-responsive {
+  border: 1px solid var(--color-border-gray);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.sales-no-data {
+  padding: 30px;
+  color: var(--color-text-light);
+  text-align: center;
+}
+
+.sales-cell-cantidad {
+  font-weight: 700;
+}
+
+.sales-cell-total {
+  font-weight: 700;
+  color: var(--color-brand-accent);
+}
